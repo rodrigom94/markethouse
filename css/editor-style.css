@@ -385,15 +385,17 @@
   color: rgb(59 130 246 / var(--tw-text-opacity))
 }
 
+.underline {
+  text-decoration-line: underline
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
 
 .transition-colors {
-  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
 }
@@ -427,34 +429,22 @@
 
 @media (min-width: 600px) {
   .alignleft:not(.wp-block-button) {
-    margin-right: 0.5rem
-  }
-
-  .alignleft:not(.wp-block-button) {
+    margin-right: 0.5rem;
     float: left
   }
 
   .alignright:not(.wp-block-button) {
-    margin-left: 0.5rem
-  }
-
-  .alignright:not(.wp-block-button) {
+    margin-left: 0.5rem;
     float: right
   }
 
   .wp-block-button.alignleft a {
-    float: left
-  }
-
-  .wp-block-button.alignleft a {
+    float: left;
     margin-right: 1rem
   }
 
   .wp-block-button.alignright a {
-    float: right
-  }
-
-  .wp-block-button.alignright a {
+    float: right;
     margin-left: 1rem
   }
 }
